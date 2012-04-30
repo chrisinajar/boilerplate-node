@@ -1,0 +1,14 @@
+doctype strict
+html(lang="en")
+	head
+		- if (typeof title !== "undefined")
+			title #{title}
+		- else
+			title A Project by Chrisinajar
+		link(rel='stylesheet', href='/css/default.css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js')
+		
+	body
+		#maindiv
+			!= body

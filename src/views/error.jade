@@ -1,0 +1,11 @@
+h1 #{status}! RUN!!
+- if (err.message)
+	p #{err.message}
+- else
+	p You must be lost.
+- if (status == "404")
+	img(src="http://i.imgur.com/w1g7c.gif")
+	p Good job.
+- else
+	img(src="http://25.media.tumblr.com/tumblr_lmi0qlt37U1qikbyeo1_500.jpg")
+	p It seems we still have some bugs
