@@ -9,7 +9,8 @@
 		"jar-flow" :  "0.x",
 		"jade" :  "*",
 		"coffee-script": "*",
-		"stylus": "*"
+		"stylus": "*",
+		"nib": "*"
 	},
 	"license": "MIT",
 	"engine": {
