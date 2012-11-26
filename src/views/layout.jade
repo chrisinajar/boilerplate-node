@@ -1,14 +1,26 @@
-doctype strict
-html(lang="en")
+doctype html
+//Conditional comment for mobile ie7 blogs.msdn.com/b/iemobile/
+html(lang="en").no-js
+
 	head
+		meta(charset="utf-8")
 		- if (typeof title !== "undefined")
 			title #{title}
 		- else
 			title A Project by Chrisinajar
+		meta(name="description", content="")
+
+		meta(name="HandheldFriendly", content="True")
+		meta(name="MobileOptimized", content="320")
+		meta(name="viewport", content="width=device-width")
+		meta(http-equiv="cleartype", content="on")
+
 		link(rel='stylesheet', href='/css/default.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 		script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js')
-		
+
+		script(src='/js/phonegap-1.5.0.js')
+
 	body
 		#maindiv
 			!= body

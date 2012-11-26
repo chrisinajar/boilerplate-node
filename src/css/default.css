@@ -1,0 +1,7 @@
+html,body{height:100%;font-family:trebuchet ms;padding:0;margin:0}
+#maindiv{background:-webkit-gradient(linear, left bottom, left top, color-stop(0.01, #00f), color-stop(0.2, #000), color-stop(1, #002));background:-webkit-linear-gradient(bottom, #00f 1%, #000 20%, #002 100%);background:-moz-linear-gradient(bottom, #00f 1%, #000 20%, #002 100%);background:-o-linear-gradient(bottom, #00f 1%, #000 20%, #002 100%);background:-ms-linear-gradient(bottom, #00f 1%, #000 20%, #002 100%);background:linear-gradient(bottom, #00f 1%, #000 20%, #002 100%);height:100%;position:relative}
+*{-webkit-box-sizing:border-box}
+a{text-decoration:none}
+.clearfix{zoom:1}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}

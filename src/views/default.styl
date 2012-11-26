@@ -1,19 +1,21 @@
-border-radius()
-	-webkit-border-radius arguments
-	-moz-border-radius arguments
-	border-radius arguments
+@import 'nib'
+@import 'nib/gradients'
 
-shadow()
-	-moz-box-shadow arguments
-	-webkit-box-shadow arguments
-	box-shadow arguments
-
-
-body
+html, body
+	height 100%
 	font-family trebuchet ms
 	padding 0px
 	margin 0px
 
+#maindiv
+	background linear-gradient(bottom, 1% blue, 20% black, #002)
+	height 100%
+	position relative
+*
+	-webkit-box-sizing border-box
+
 a
 	text-decoration none
 
+.clearfix
+	clearfix()

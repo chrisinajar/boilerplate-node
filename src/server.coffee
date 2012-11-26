@@ -10,6 +10,7 @@ flow = require 'jar-flow'
 config = require './config'
 stylus = require 'stylus'
 jade = require 'jade'
+nib = require 'nib'
 
 # not found error, used to make 404 work correctly
 class NotFound extends Error
@@ -41,10 +42,11 @@ app.configure ->
 				.set('filename', path)
 				.set('warn', true)
 				.set('compress', true)
+				.use(nib())
 	}
 
 	app.use '/css', express.static(cssdir)
-	app.use '/static', express.static(staticdir)
+	app.use '/', express.static(staticdir)
 
 # Error pages!
 renderError = (err, res)->
